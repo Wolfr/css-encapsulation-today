@@ -49,9 +49,7 @@ See the `style-scoped/` folder.
 
 Possibly the best solution. What we actually want.
 
-No demo yet. See the `shadow-dom/` folder.
-
-Please PR this repo if you are good with Polymer and/or the shadow DOM
+No demo yet. See the `shadow-dom` branch for an attempt. Please PR this repo if you are good with Polymer and/or the shadow DOM.
 
 * Advantages 
   * Encapsulate styles OR provide hooks for styling to parent element (see Reaching into Shadows with CSS <a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">here</a>)
