@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <script src="http://rawgithub.com/Polymer/polymer/master/polymer.min.js"></script>
    <style type="text/css" media="screen">
      p { color: blue;}
    </style>
@@ -11,10 +12,23 @@
   
   <h1>shadow DOM test case</h1>
   <p>This paragraph HTML element should be blue</p>
-  <my-web-component></my-web-component>
+  
+  <div id="host"></div>
+
   <p>This paragraph HTML element should be blue</p>
 
-  <script src="polymer.min.js"></script>
-  <link rel="import" href="my-web-component.html">
+  <template>
+    <style scoped>
+      p { color: red; }
+    </style>
+    <p>This is my shadow dom where paragraphs should be RED</p>
+  </template>
+
+  <script>
+    var host = document.querySelector('#host');
+    var shadow = host.createShadowRoot(); // no prefix in master branch of Polymer (soon to be stable).
+    shadow.appendChild(document.querySelector('template').content.cloneNode(true));
+  </script>
+
 </body>
 </html>

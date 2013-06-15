@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <script src="polymer.min.js"></script>
+   <style type="text/css" media="screen">
+     p { color: blue;}
+   </style>
+</head>
+<body>
+  
+  <h1>custom element test case</h1>
+  <p>This paragraph HTML element should be blue</p>
+  <my-app></my-app>
+  <p>This paragraph HTML element should be blue</p>
+
+  <element name="my-app">
+    <template>
+      <style>
+        p { color: red; }
+      </style>
+      <p>This is my web component where paragraphs should be RED</p>
+     </template>
+    <script>Polymer.register(this);</script>
+  </element>
+
+</body>
+</html>

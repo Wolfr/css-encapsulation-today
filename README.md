@@ -26,7 +26,11 @@ An iframe in the most basic encapsulation method and since it's so old it works 
   * 2 HTTP requests for the HTML
   * The element container (iframe) doesn't scale with the page automatically
   * Parent site can't touch what is happening in the frame
-  
+
+# Manual scoping
+
+No example here. Basically you make sure styles don't touch other styles by prefixing everything and never using `!important` and taking great care in specifity matters.
+
 # Scoped stylesheets
 
 Scoped stylesheets are **not a solution** to CSS encapsulation. The only thing scoped styles does is limit styles to a particular element in the DOM. It doesn't prevent styles from the parent page to cascade to the "component".
@@ -45,17 +49,18 @@ See the `style-scoped/` folder.
 * <a href="http://www.html5forwebdesigners.com/semantics/index.html#scoped_styles">Scoped styles - HTML5 for web designers</a>
 * <a href="http://css-tricks.com/saving-the-day-with-scoped-css/">Saving the Day with Scoped CSS</a> by Arley McBlain
 
-# Shadow DOM
+# Web components
 
 Possibly the best solution. What we actually want.
 
-No demo yet. See the `shadow-dom` branch for an attempt. Please PR this repo if you are good with Polymer and/or the shadow DOM.
+See the two demos in directories `shadow-dom` and 'custom elements`.
 
 * Advantages 
   * Encapsulate styles OR provide hooks for styling to parent element (see Reaching into Shadows with CSS <a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">here</a>)
   
 * Disadvantages 
   * Has to be polyfilled for now using Polymer
+  * Relatively unstable, everything is being developed as we speak
 
 See <a href="http://www.polymer-project.org/">Polymer project</a>.
 
