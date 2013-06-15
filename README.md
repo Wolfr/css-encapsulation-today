@@ -65,3 +65,4 @@ See <a href="http://www.polymer-project.org/">Polymer project</a>.
 
 * <a href="http://www.youtube.com/watch?feature=player_embedded&v=0g0oOOT86NY#at=1777">Web components in action - Google I/O</a>
 * <a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">What the Heck is Shadow DOM?</a>
+* <a href="http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/">Shadow DOM 201: CSS and Styling</a>
