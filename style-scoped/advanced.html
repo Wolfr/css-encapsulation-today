@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped styles</title>
+  <style>
+      p {
+        color: green;
+      }
+      .advanced p {
+          background: red;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="docs">
+      <h1>Scoped styles test case: "bleed"</h1>
+      <p>View source to see what scoped styles are.</p>
+
+      <div class="advanced">
+        <style scoped>
+          @import "my-styles-advanced.css";
+        </style>
+        <p>Hello these are the advanced styles</p>
+        <p>The only style that gets loaded is <code>p { color: blue; }</code></p>
+        <p>The background style bleeds through from the regular style tag.</p>
+      </div>
+      
+      <p>This paragraph should be green.</p>
+  </div>
+
+  <h2>Compatibility table</h2>
+  <table>
+    <tr>
+      <td>Firefox 21.0</td>
+      <td>Untested</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Safari 6.0.4</td>
+      <td>Untested</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mobile Safari 6.0 (369.2)</td>
+      <td>Untested</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chrome 27</td>
+      <td>Untested</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chrome 29</td>
+      <td>Untested</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Opera 12</td>
+      <td>Untested</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Internet Explorer 10</td>
+      <td>Untested</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+</body>
+</html>
